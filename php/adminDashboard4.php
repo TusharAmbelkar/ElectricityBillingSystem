@@ -77,7 +77,7 @@
 			<p style="text-align: center;text-shadow: 2px 1px grey;font-size: 1.2em; ">
 				Choose one
 			</p>
-			<a href="adminDashboard.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%;height: 10%">Profile</button></a>
+			<a href="adminDashboard.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Profile</button></a>
 			<br>
 			<a href="adminDashboard1.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Acknowledge verified</br> connection request</button></a>
 			<br>
@@ -85,22 +85,13 @@
 			<br>
 			<a href="adminDashboard3.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Collect cash from vendor</button></a>
 			<br>
-			<a href="adminDashboard4.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register vendor</button></a>
+			<a href="adminDashboard4.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%">Register vendor</button></a>
 			<br>
 			<a href="adminDashboard5.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Add an admin</button></a>
 			<br>
 		</div>
 		<div style="width: 75%;float:left	;border: 2px solid black; border-radius: 8px;height: 100%;padding: 5px;margin: 10px;">
-			<p style="text-align: center;font-size: 1.6em">
-				Profile
-			</p>
-			<br><br>
-			<table class="table">
-				<?php
-					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr>";
-				?>
-			</table>
-			<br>
+			
 		</div>
 	</div>
 </body>
