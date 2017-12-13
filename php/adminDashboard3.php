@@ -85,13 +85,47 @@
 			<br>
 			<a href="adminDashboard3.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%">Collect cash from vendor</button></a>
 			<br>
-			<a href="adminDashboard4.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register vendor</button></a>
+			<a href="vendorRegister.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register vendor</button></a>
 			<br>
 			<a href="adminDashboard5.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Add an admin</button></a>
 			<br>
 		</div>
 		<div style="width: 75%;float:left	;border: 2px solid black; border-radius: 8px;height: 100%;padding: 5px;margin: 10px;">
-			
+			<div class="text-center">
+				<p style="font-size: 1.8em;text-shadow: 2px 1px grey"> Collect Cash</p>
+			</div>
+			<form action="collectMoney.php" method="POST">
+				<fieldset>
+					<legend>
+						Enter vendor username:
+					</legend>
+					<div class="col-xs-1"></div>
+					<div class="col-xs-2">Vendor username:</div>
+					<div class="col-xs-2"><input type="text" name="vUsername" placeholder="Vendor Username" required></div>
+					<br><br>
+					<fieldset>
+						<legend>
+							Enter amount:
+						</legend>
+					</fieldset>
+					<div class="col-xs-1">
+						
+					</div>
+					<div class="col-xs-2">
+						Amount in &#8377:
+					</div>
+					<div class="col-xs-2">
+						<input type="text" name="amount" placeholder="in &#8377">
+					</div>
+					<div class="col-xs-1">
+						<p style="font-size: 1.5em">&#8377</p>
+					</div>
+					<br>
+					<br>
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2"><input type="submit" name="Submit" value="Submit" class="btn btn-success"></div>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 </body>

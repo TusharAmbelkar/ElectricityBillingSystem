@@ -85,7 +85,7 @@
 			<br>
 			<a href="adminDashboard3.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Collect cash from vendor</button></a>
 			<br>
-			<a href="adminDashboard4.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register vendor</button></a>
+			<a href="vendorRegister.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register vendor</button></a>
 			<br>
 			<a href="adminDashboard5.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%">Add an admin</button></a>
 			<br>
@@ -106,7 +106,7 @@
 							</div>	
 						</div>
 						<br>
-						<fieldset style="width: 80%;">
+						<fieldset style="width: 95%;">
 							<legend>
 								Personal Information
 							</legend>
@@ -135,7 +135,7 @@
 							
 						</fieldset>
 							<br>
-						<fieldset style="width: 80%;">
+						<fieldset style="width: 95%;">
 							<legend>
 								Contact Information
 							</legend>
@@ -165,7 +165,7 @@
 							 
 							<br>
 						</fieldset>
-						<fieldset style="width: 80%;">
+						<fieldset style="width: 95%;">
 							<legend>
 								Login Details
 							</legend>
