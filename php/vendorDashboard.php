@@ -26,7 +26,7 @@
 				<li>
 					<a href="about.php">About</a>
 				</li>
-				<li class="active">
+				<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<h4> Who are you?</h4>
@@ -54,7 +54,7 @@
 					</ul>
 				</li>-->
 				<li>
-					<a href="">Contact us</a>
+					<a href="contact.php">Contact us</a>
 				</li>
 			</ul>
 			<ul class="navbar-nav nav navbar-right">
@@ -62,8 +62,7 @@
 					session_start();
 					if (isset($_SESSION['username'])&&isset($_SESSION['type'])) {
 						$msg ="<li><a class='dropdown-toggle' data-toggle='dropdown' href='#''>Welcome ".$_SESSION['type']." ".$_SESSION['username']." <span class='caret'></span></a><ul class='dropdown-menu'><li><a href='profile.php'>Profile</a></li><li><a href='logout.php'>Logout</a></li></ul></li>";
-						echo "string";
-
+						echo $msg;
 					}
 					else{
 						echo "<li><a href='index.php'>Welcome</a></li>";
@@ -72,62 +71,32 @@
 			</ul>
 		</div>
 	</nav>
-	<?php 
-		$sessionVariable=(isset($_SESSION['username'])?$_SESSION['username']:'')
-	?>
-	<script type="text/javascript">
-		window.onload=function(){
-			var myVar='<?php echo $sessionVariable;?>';
-		if (myVar==='') {
-
-		}
-		else {
-			alert("You are alredy logged in !!!!\n If you wish to use another account please logout first");
-			window.history.back();
-		}
-		}
-	</script>
-	<br><br><br>
-	<div class="container-fluid" style="margin: auto;">
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4" style="border:10px double;">
-					<div class="container">
-						<h2>Welcome back Admin!!!</h2>
-						<h4>Enter your login credentials</h4>
-						
-						<br><br><br>
-						<form action="adminLoginValidate.php" method="POST">
-							
-								<!--<div class="row">-->
-									
-									<div class="col-xs-2">
-										User Name
-									</div>
-									<div class="col-xs-2">
-										<input type="text" name="username" placeholder ="Enter username">
-									</div>
-									<div class="col-xs-1"></div>
-								<!--</div>-->
-								<br><br><br>
-									<div class="col-xs-2">
-										Password
-									</div>
-									<div class="col-xs-3">
-										<input type="password" name="password" placeholder="Enter password" minlength="6">
-									</div>
-									
-									<br><br><br>
-									<div class="col-xs-2">
-										<input type="submit" class="btn btn-primary" name="Log In" value="Log in ">
-									</div>
-										
-								<br><br>
-							
-						</form>
-					</div>
-			</div>
-			<div class="col-sm-4"></div>
+	<div style="width: 100%">
+		<p style="text-align: center;text-shadow: 2px 1px grey;font-size: 2em; ">Vendor Dashboard</p>
+		<div style="width: 20%; float: left;border: 2px solid black; border-radius: 8px;height: 100%;padding: 5px;margin: 2px;" class="center-block">
+			<p style="text-align: center;text-shadow: 2px 1px grey;font-size: 1.2em; ">
+				Choose one
+			</p>
+			<a href="vendorDashboard.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Profile</button></a>
+			<br>
+			<a href="vendorDashboard1.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Accept payment cash/cheque</button></a>
+			<br>
+			<a href="vendorDashboard2.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%">Meter reading</button></a>
+			<br>
+			<a href="userRegister.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register user</button></a>
+			<br>
+		</div>
+		<div style="width: 75%;float:left	;border: 2px solid black; border-radius: 8px;height: 100%;padding: 5px;margin: 10px;">
+			<p style="text-align: center;font-size: 1.6em">
+				Profile
+			</p>
+			<br><br>
+			<table class="table">
+				<?php	
+					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr><tr><th>Mobile number</th><td>".$_SESSION['contactnumber1']."</td></tr><tr><th>Cash Credit</th><td>".$_SESSION['cashCredit']."</td></tr>";
+				?>
+			</table>
+			<br>
 		</div>
 	</div>
 </body>

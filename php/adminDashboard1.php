@@ -26,7 +26,7 @@
 				<li>
 					<a href="about.php">About</a>
 				</li>
-				<li>
+				<!--<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<h4> Who are you?</h4>
@@ -40,7 +40,7 @@
 							<a href="adminLogin.php">Admin</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 				<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Register<span class="caret"></span></a>
 					<ul class="dropdown-menu">

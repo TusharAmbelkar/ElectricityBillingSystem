@@ -14,20 +14,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">Electricity Billing System</a>
 			</div>
 			<ul class="navbar-nav nav">
-				<li>
+				<li class="active">
 					<a href="index.php">Home</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="about.php">About</a>
 				</li>
 				<li>
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="">Login<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<h4> Who are you?</h4>
 						<li>
@@ -58,10 +59,11 @@
 				</li>
 			</ul>
 			<ul class="navbar-nav nav navbar-right">
+				
 				<?php  
 					session_start();
 					if (isset($_SESSION['username'])&&isset($_SESSION['type'])) {
-						$msg ="<li><a class='dropdown-toggle' data-toggle='dropdown' href='#''>Welcome ".$_SESSION['type']." ".$_SESSION['username']." <span class='caret'></span></a><ul class='dropdown-menu'><li><a href='profile.php'>Profile</a></li><li><a href='logout.php'>Logout</a></li></ul></li>";
+						$msg = "<li><a class='dropdown-toggle' data-toggle='dropdown' href='#''>Welcome ".$_SESSION['type']." ".$_SESSION['username']." <span class='caret'></span></a><ul class='dropdown-menu'><li><a href='profile.php'>Profile</a></li><li><a href='logout.php'>Logout</a></li></ul></li>";
 						echo $msg;
 					}
 					else{
@@ -71,6 +73,9 @@
 			</ul>
 		</div>
 	</nav>
-	
+	<div style="background: url('C:/xampp/htdocs/EBS/imagestransmission_lines_onpage.jpg') ;background-repeat: no-repeat;background-size: contain;opacity: 0."4>
+		
+	</div>
+	<div class="row"></div>
 </body>
 </html>

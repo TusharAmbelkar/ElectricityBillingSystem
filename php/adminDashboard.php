@@ -41,7 +41,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<!--<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Register<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<h4> Who are you?</h4>
@@ -52,7 +52,7 @@
 							<a href="vendorRegister.php">Vendor</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 				<li>
 					<a href="contact.php">Contact us</a>
 				</li>
@@ -97,7 +97,7 @@
 			<br><br>
 			<table class="table">
 				<?php
-					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr><tr><th>Mobile number</th><td>".$_SESSION['contactnumber1']."</td></tr>";
+					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr><tr><th>Mobile number</th><td>".$_SESSION['contactnumber1']."</td></tr><tr><th>cashCredit</th><td>".$_SESSION['cashCredit']."</td></tr>";
 				?>
 			</table>
 			<br>

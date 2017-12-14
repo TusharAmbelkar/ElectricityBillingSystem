@@ -41,7 +41,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<!--<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Register<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<h4> Who are you?</h4>
@@ -52,7 +52,7 @@
 							<a href="vendorRegister.php">Vendor</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 				<li>
 					<a href="">Contact us</a>
 				</li>
@@ -61,7 +61,7 @@
 				<?php  
 					session_start();
 					if (isset($_SESSION['user'])&&isset($_SESSION['type'])) {
-						$msg = "<li><a class='dropdown-toggle' data-toggle='dropdown' href='#''>Welcome ".$_SESSION['type']." ".$_SESSION['username']." <span class='caret'></span></a><ul class='dropdown-menu'><li><a href='profile.php'>Profile</a></li><li><a href=''>Logout</a></li></ul></li>";
+						$msg = "<li><a class='dropdown-toggle' data-toggle='dropdown' href='#''>Welcome ".$_SESSION['type']." ".$_SESSION['username']." <span class='caret'></span></a><ul class='dropdown-menu'><li><a href='profile.php'>Profile</a></li><li><a href='logout.php'>Logout</a></li></ul></li>";
 						echo "string";
 
 					}
