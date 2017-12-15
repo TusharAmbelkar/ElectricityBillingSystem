@@ -92,9 +92,7 @@
 			</p>
 			<br><br>
 			<table class="table">
-				<?php	
-					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr><tr><th>Mobile number</th><td>".$_SESSION['contactnumber1']."</td></tr><tr><th>Cash Credit</th><td>".$_SESSION['cashCredit']."</td></tr>";
-				?>
+				<tr><th>Account number</th><td>151070050</td></tr><tr></tr><tr><th>First Name</th><td>Romil</td></tr><tr></tr><tr><th>Middle Name</th><td>Tejas</td></tr><tr><th>Last Name</th><td>Shah</td></tr><tr><th>Username</th><td>brising23</td></tr><tr><th>Email-id</th><td>romilshah@gmail.com</td></tr><tr><th>Mobile number</th><td>9856321470</td></tr>
 			</table>
 			<br>
 		</div>

@@ -77,26 +77,48 @@
 			<p style="text-align: center;text-shadow: 2px 1px grey;font-size: 1.2em; ">
 				Choose one
 			</p>
-			<a href="vendorDashboard.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%;height: 10%">Profile</button></a>
+			<a href="vendorDashboard.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Profile</button></a>
 			<br>
-			<a href="vendorDashboard1.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%;height: 10%">Accept payment cash/cheque</button></a>
+			<a href="vendorDashboard1.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block active" style="width: 80%;height: 10%">Accept payment cash/cheque</button></a>
 			<br>
 			<a href="vendorDashboard2.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Meter reading</button></a>
 			<br>
 			<a href="userRegister.php" style="width:90%;margin: auto;"><button class="btn btn-primary center-block" style="width: 80%">Register user</button></a>
 			<br>
+			
 		</div>
 		<div style="width: 75%;float:left	;border: 2px solid black; border-radius: 8px;height: 100%;padding: 5px;margin: 10px;">
-			<p style="text-align: center;font-size: 1.6em">
-				Profile
-			</p>
-			<br><br>
-			<table class="table">
-				<?php	
-					echo "<tr><th>First Name</th><td>".$_SESSION['firstname']."</td></tr><tr></tr><tr><th>Middle Name</th><td>".$_SESSION['middlename']."</td></tr><tr><th>Last Name</th><td>".$_SESSION['lastname']."</td></tr><tr><th>Username</th><td>".$_SESSION['username']."</td></tr><tr><th>Email-id</th><td>".$_SESSION['email']."</td></tr><tr><th>Mobile number</th><td>".$_SESSION['contactnumber1']."</td></tr><tr><th>Cash Credit</th><td>".$_SESSION['cashCredit']."</td></tr>";
-				?>
-			</table>
-			<br>
+			<div class="text-center" style="text-shadow: 2px 1px grey;font-size: 1.5em">
+				Payment cash/check
+			</div>
+			<form class="">
+				<fieldset>
+					<legend>Account information</legend>
+					<div class="col-xs-3"></div>
+					<div class="col-xs-2" style="font-size: 1.2em">Account Number:</div>
+					<div class="col-xs-2"><input type="text" name="acNumber" placeholder="Enter Account Number" required></div>
+					<br><br>
+					<div class="col-xs-3"></div>
+					<div class="col-xs-2" style="font-size: 1.2em">Amount:</div>
+					<div class="col-xs-2"><input type="text" name="amount" placeholder="Enter Amount in &#8377" required></div>
+					<br><br>
+					<div class="col-xs-3"></div>
+					<div class="col-xs-2" style="font-size: 1.2em">
+						Mode:
+					</div>
+					<div class="col-xs-3">
+						<input list="Month" name="month" placeholder="Mode of payment c/q" required>
+						<datalist id='Month'>
+							<option value="Cash">c</option>
+							<option value="Cheque">q</option>
+							
+						</datalist>
+					</div>
+					<br><br>
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2"><input type="submit" name="submit" value="Submit" class="btn btn-primary"></div>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 </body>
